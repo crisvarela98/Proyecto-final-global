@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistema de Gestión de Facturas y Proveedores</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Gestión de Facturas y Proveedores</h1>
+    </header>
+
+    <div id="superior">
+        <input type="text" id="buscador" placeholder="Buscar proveedor...">
+        <button id="buscarProveedor">Buscar</button>
+    </div>
+
+    <div id="ingreso-informacion">
+        <form id="factura-form">
+            <label for="numeroOC">Número de OC:</label>
+            <input type="number" id="numeroOC" required>
+            <label for="numeroFactura">Número de Factura:</label>
+            <input type="text" id="numeroFactura" required>
+            <label for="proveedor">Nombre del proveedor:</label>
+            <input type="text" id="proveedor" required>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" required>
+            <label for="condicionVenta">Condición de venta:</label>
+            <select id="condicionVenta" required>
+                <option value="15 DFF">15 DFF</option>
+                <option value="30 DFF">30 DFF</option>
+                <option value="60 DFF">60 DFF</option>
+                <option value="CTA. CTE">CTA. CTE</option>
+                <option value="CONTADO">CONTADO</option>
+                <option value="CONTRA ENTREGA">CONTRA ENTREGA</option>
+            </select>
+            <label for="fechaVencimiento">Fecha de Vencimiento:</label>
+            <input type="date" id="fechaVencimiento" required>
+            <label for="monto">Monto:</label>
+            <input type="number" id="monto" step="0.01" required>
+            <button type="submit">Agregar Factura</button>
+        </form>
+    </div>
+
+    <div id="botones-ordenamiento">
+        <button type="button" onclick="ordenarPorCriterio('numeroOC')">Ordenar por Número de OC</button>
+        <button type="button" onclick="ordenarPorCriterio('proveedor')">Ordenar por Proveedor</button>
+        <button type="button" onclick="ordenarPorCriterio('monto')">Ordenar por Monto</button>
+        <button type="button" onclick="ordenarPorCriterio('condicionVenta')">Ordenar por Condición de Venta</button>
+        <button type="button" onclick="ordenarPorCriterio('fechaVencimiento')">Ordenar por Fecha de Vencimiento</button>
+        <button type="button" id="guardarFacturas" onclick="guardarFacturas()">Guardar Facturas</button>
+    </div>
+
+    <div id="tabla-informacion">
+        <table>
+            <thead>
+                <tr>
+                    <th>Número de OC</th>
+                    <th>Proveedor</th>
+                    <th>Número de Factura</th>
+                    <th>Monto</th>
+                    <th>Condición de Venta</th>
+                    <th>Fecha de Vencimiento</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-facturas">
+                <!-- Las filas de la tabla se generarán dinámicamente en JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="informacion-total">
+        <p>Total a pagar a proveedor: $<span id="totalPagar">0.00</span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

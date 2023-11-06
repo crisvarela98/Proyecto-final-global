@@ -1,0 +1,189 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Fondo gris claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    background-color: #48416c; /* Tono RGB 72, 65, 108 */
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Estilos para el div "superior" */
+#superior {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5; /* Fondo gris claro */
+    border: 1px solid #008CBA; /* Borde azul */
+    padding: 10px;
+    width: 100%;
+}
+
+#buscador {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 70%;
+}
+
+/* Estilos para el botón de búsqueda */
+#buscarProveedor {
+    padding: 10px;
+    background-color: #008CBA; /* Color de acento azul */
+    color: white;
+    cursor: pointer;
+    border: none;
+    width: 30%;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+#buscarProveedor:hover {
+    background-color: #005A77;
+    transform: scale(1.05);
+}
+
+/* Estilos para el div "ingreso-informacion" */
+#ingreso-informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5; /* Fondo gris claro */
+    border: 1px solid #efab9c; /* Borde rosa */
+    padding: 20px;
+    width: 100%;
+}
+
+#factura-form {
+    width: 100%;
+    max-width: 400px;
+}
+
+label, input, select, button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus, button:focus {
+    border-color: #008CBA;
+}
+
+button {
+    background-color: #008CBA;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #005A77;
+    transform: scale(1.05);
+}
+
+/* Estilos para el div "botones-ordenamiento" */
+#botones-ordenamiento {
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5; /* Fondo gris claro */
+    border: 1px solid #b79bfa; /* Borde morado */
+    padding: 10px;
+    width: 100%;
+}
+
+#botones-ordenamiento button {
+    background-color: #008CBA; /* Color de acento azul */
+    color: white;
+    padding: 10px 20px;
+}
+
+#botones-ordenamiento button:hover {
+    background-color: #005A77;
+    transform: scale(1.05);
+}
+
+/* Estilos para la tabla */
+#tabla-informacion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5; /* Fondo gris claro */
+    border: 1px solid #9ac1ed; /* Borde celeste */
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Estilos para el div "informacion-total" */
+#informacion-total {
+    text-align: center;
+    background-color: #f5f5f5; /* Fondo gris claro */
+    border: 1px solid #e3c18d; /* Borde amarillo */
+    padding: 10px;
+}
+
+/* Estilos responsivos para dispositivos móviles (480px o menos) */
+@media (max-width: 480px) {
+    #superior {
+        flex-direction: column;
+    }
+
+    #buscador {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #buscarProveedor {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* Ajusta la tabla y los botones para dispositivos móviles */
+    #tabla-informacion {
+        padding: 10px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+
+    #botones-ordenamiento {
+        padding: 5px;
+    }
+
+    #botones-ordenamiento button {
+        padding: 5px 10px;
+    }
+}
