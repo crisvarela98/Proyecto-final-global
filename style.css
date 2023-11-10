@@ -62,7 +62,7 @@ header {
   flex-direction: column;
   align-items: center;
   background-color: #f5f5f5; /* Fondo gris claro */
-  border: 1px solid #efab9c; /* Borde rosa */
+  border: 1px solid #008CBA; /* Borde azul */
   padding: 20px;
   width: 100%;
 }
@@ -88,7 +88,7 @@ button {
 input:focus,
 select:focus,
 button:focus {
-  border-color: #008CBA;
+  border: 1px solid #008CBA; /* Borde azul */
 }
 
 button {
@@ -108,7 +108,7 @@ button:hover {
   display: flex;
   justify-content: center;
   background-color: #f5f5f5; /* Fondo gris claro */
-  border: 1px solid #b79bfa; /* Borde morado */
+  border: 1px solid #008CBA; /* Borde azul */
   padding: 10px;
   width: 100%;
 }
@@ -117,7 +117,7 @@ button:hover {
   background-color: #008CBA; /* Color de acento azul */
   color: white;
   padding: 10px 20px;
-  border-radius: 50%; /* Hace que el botón sea redondo */
+
 }
 
 #botones-ordenamiento button:hover {
@@ -132,7 +132,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   background-color: #f5f5f5; /* Fondo gris claro */
-  border: 1px solid #9ac1ed; /* Borde celeste */
+  border: 1px solid #008CBA; /* Borde azul */
   padding: 20px;
   max-width: 1390px; /* Ancho máximo para PC */
   margin: 0 auto; /* Centra el contenido en pantallas más grandes */
@@ -159,7 +159,7 @@ td {
 #informacion-total {
   text-align: center;
   background-color: #f5f5f5; /* Fondo gris claro */
-  border: 1px solid #e3c18d; /* Borde amarillo */
+  border: 1px solid #008CBA; /* Borde azul */
   padding: 10px;
 }
 
@@ -206,7 +206,7 @@ td {
 }
 
 #footer {
-  background-color: #333;
+  background-color: #48416c; /* Tono RGB 72, 65, 108 */
   color: white;
   padding: 20px 0;
   display: flex;
@@ -243,7 +243,7 @@ img {
   width: 40px;
   height: 40px;
   margin-right: 10px;
-  background-color: #444;
+  background-color: #48416c; /* Tono RGB 72, 65, 108 */
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -251,7 +251,7 @@ img {
 }
 
 #botones-exportar button:hover {
-  background-color: #555;
+  background-color: #48416c; /* Tono RGB 72, 65, 108 */
   transform: scale(1.05);
 }
 

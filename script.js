@@ -4,6 +4,12 @@ const tablaFacturas = document.getElementById('tabla-facturas');
 const totalPagar = document.getElementById('totalPagar');
 const buscador = document.getElementById('buscador');
 const buscarProveedorBtn = document.getElementById('buscarProveedor');
+const ordenarNumeroOCBtn = document.getElementById('ordenarNumeroOC');
+const ordenarProveedorBtn = document.getElementById('ordenarProveedor');
+const ordenarMontoBtn = document.getElementById('ordenarMonto');
+const ordenarCondicionVentaBtn = document.getElementById('ordenarCondicionVenta');
+const ordenarFechaVencimientoBtn = document.getElementById('ordenarFechaVencimiento');
+const guardarFacturasBtn = document.getElementById('guardarFacturas');
 
 // Arreglo para almacenar las facturas
 let facturas = [];
@@ -155,6 +161,13 @@ function actualizarTabla(facturasMostrar) {
 
 // Agregar un evento para el formulario
 facturaForm.addEventListener('submit', agregarFactura);
+
+// Agregar eventos de clic para los botones de ordenamiento
+ordenarNumeroOCBtn.addEventListener('click', () => ordenarPorCriterio('numeroOC'));
+ordenarProveedorBtn.addEventListener('click', () => ordenarPorCriterio('proveedor'));
+ordenarMontoBtn.addEventListener('click', () => ordenarPorCriterio('monto'));
+ordenarCondicionVentaBtn.addEventListener('click', () => ordenarPorCriterio('condicionVenta'));
+ordenarFechaVencimientoBtn.addEventListener('click', () => ordenarPorCriterio('fechaVencimiento'));
 
 // Agregar un evento para el botón de búsqueda de proveedor
 buscarProveedorBtn.addEventListener('click', filtrarPorProveedor);

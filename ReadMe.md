@@ -1,4 +1,4 @@
-# Sistema de Gestión de Facturas y Proveedores
+# Sistema de Gestión: Facturas y Proveedores
 
 Este es un simulador de facturas que permite registrar y contabilizar facturas de proveedores. Los usuarios pueden ingresar la información de la factura, y la aplicación mostrará una lista de todas las facturas registradas en una tabla.
 
@@ -67,7 +67,8 @@ Este proyecto no lleva licencia.
 
 ## Actualizaciones y Versiones
 
-- Versión 1.1 (Fecha de lanzamiento: Noviembre/2023): Implementación inicial de las características principales. Agregadas funciones de guardar la información.
+- Versión 1.0 (Fecha de lanzamiento: Noviembre/2023): Implementación inicial de las características principales. Agregadas funciones de guardar la información.
+- Versión 1.1 (Fecha de lanzamiento: 10/Noviembre/2023): Footer y estructura basica para desarrollo de la siguente fase.
 - Versión 1.2 (Proximamente):
 Bibliotecas Requeridas para Exportación
 
@@ -81,4 +82,3 @@ Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto conmigo:
 
 - Correo Electrónico: crisvarela98@gmail.com
 - Sitio Web: https://crisvarela98.github.io/
-

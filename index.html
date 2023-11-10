@@ -7,7 +7,8 @@
 </head>
 <body>
     <header>
-        <h1>Sistema de Gestión de Facturas y Proveedores </h1>
+        <h1>Sistema de Gestión <br>Facturas y Proveedores </h1>
+      <p>V.:1.1</p>
     </header>
 
     <div id="superior">
@@ -42,14 +43,14 @@
         </form>
     </div>
 
-    <div id="botones-ordenamiento">
-        <button type="button" onclick="ordenarPorCriterio('numeroOC')">Ordenar por Número de OC</button>
-        <button type="button" onclick="ordenarPorCriterio('proveedor')">Ordenar por Proveedor</button>
-        <button type="button" onclick="ordenarPorCriterio('monto')">Ordenar por Monto</button>
-        <button type="button" onclick="ordenarPorCriterio('condicionVenta')">Ordenar por Condición de Venta</button>
-        <button type="button" onclick="ordenarPorCriterio('fechaVencimiento')">Ordenar por Fecha de Vencimiento</button>
-        <button type="button" id="guardarFacturas" onclick="guardarFacturas()">Guardar Facturas</button>
-    </div>
+  <div id="botones-ordenamiento">
+      <button type="button" id="ordenarNumeroOC">Ordenar por Número de OC</button>
+      <button type="button" id="ordenarProveedor">Ordenar por Proveedor</button>
+      <button type="button" id="ordenarMonto">Ordenar por Monto</button>
+      <button type="button" id="ordenarCondicionVenta">Ordenar por Condición de Venta</button>
+      <button type="button" id="ordenarFechaVencimiento">Ordenar por Fecha de Vencimiento</button>
+      <button type="button" id="guardarFacturas">Guardar Facturas</button>
+  </div>
 
     <div id="tabla-informacion">
         <table>
@@ -78,7 +79,7 @@
 
     <div id="footer">
         <div id="proyecto">
-            <p class="titulo-proyecto">Sistema de Gestión<br>de Facturas y Proveedores</p>
+            <p class="titulo-proyecto">Sistema de Gestión <br>Facturas y Proveedores</p>
             <img src="img/Yellow Black Playful Lamp Bulb Idea Company Logo.png" alt="Logo">
         </div>
         <div id="botones-exportar">
@@ -91,4 +92,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
