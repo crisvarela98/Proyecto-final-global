@@ -3,6 +3,7 @@
 <head>
     <title>Sistema de Gestión de Facturas y Proveedores</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="img/Yellow Black Playful Lamp Bulb Idea Company Logo.png">
 </head>
 <body>
     <header>
@@ -64,9 +65,9 @@
                 </tr>
             </thead>
             <tbody id="tabla-facturas">
-                
+
               <!-- Las filas de la tabla se generarán dinámicamente en JavaScript -->
-              
+
             </tbody>
         </table>
     </div>
@@ -75,6 +76,19 @@
         <p>Total a pagar a proveedor: $<span id="totalPagar">0.00</span></p>
     </div>
 
+    <div id="footer">
+        <div id="proyecto">
+            <p class="titulo-proyecto">Sistema de Gestión<br>de Facturas y Proveedores</p>
+            <img src="img/Yellow Black Playful Lamp Bulb Idea Company Logo.png" alt="Logo">
+        </div>
+        <div id="botones-exportar">
+            <button id="botonE" data-export="excel"><img src="img/microsoft-excel-logo-icon-free-download-free-vector.jpg" alt="Exportar a Excel"></button>
+            <button id="botonW" data-export="word"><img src="img/Microsoft_Office_Word_(2019–present).svg.png" alt="Exportar a Word"></button>
+            <button id="botonP" data-export="pdf"><img src="img/adobe-pdf3324.jpg" alt="Exportar a PDF"></button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
+
