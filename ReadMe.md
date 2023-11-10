@@ -67,8 +67,8 @@ Este proyecto no lleva licencia.
 
 ## Actualizaciones y Versiones
 
-- Versión 1.0 (Fecha de lanzamiento: Noviembre/2023): Implementación inicial de las características principales. Agregadas funciones de guardar la información.
-- Versión 1.1 (Proximamente):
+- Versión 1.1 (Fecha de lanzamiento: Noviembre/2023): Implementación inicial de las características principales. Agregadas funciones de guardar la información.
+- Versión 1.2 (Proximamente):
 Bibliotecas Requeridas para Exportación
 
 - Para exportar a Excel, se requiere la biblioteca [exceljs](https://github.com/exceljs/exceljs).
