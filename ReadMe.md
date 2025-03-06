@@ -1,6 +1,6 @@
 # Sistema de Gestión: Facturas y Proveedores
 
-Este es un simulador de facturas que permite registrar y contabilizar facturas de proveedores. Los usuarios pueden ingresar la información de la factura, y la aplicación mostrará una lista de todas las facturas registradas en una tabla.
+Permite registrar y contabilizar facturas de proveedores. Los usuarios pueden ingresar la información de la factura, y la aplicación mostrará una lista de todas las facturas registradas en una tabla.
 
 ## Cómo Funciona
 
